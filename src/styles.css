@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        --color-primary: 0 0 0;
+        --color-secondary: 125 132 144;
+        --color-bg: 249 245 238;
+        --color-purple-contrast: 255 255 255;
+        --color-purple-from: 98 6 222;
+        --color-purple-to: 136 0 207;
+    }
+    html {
+        font-family: "Poppins", system-ui, sans-serif;
+        background-color: rgb(var(--color-bg));
+        scroll-behavior: smooth;
+    }
+}

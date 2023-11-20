@@ -1,0 +1,142 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./dist/styles.css" rel="stylesheet">
+</head>
+<body>
+<!-- header -->
+<div class="bg-cream inset-x-0 top-0 z-50 shadow-lg sticky">
+    <header class="lg:container mx-auto">
+        <nav class="flex items-center justify-between p-6" aria-label="Global">
+            <div class="flex lg:flex-1">
+                <p>logo safi</p>
+            </div>
+            <div class="flex lg:hidden">
+                <button id="open-menu" type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
+                    <span class="sr-only">Ouvrir le menu</span>
+                    <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                    </svg>
+                </button>
+            </div>
+            <div class="hidden lg:flex lg:gap-x-4 lg:items-center">
+                <a class="px-4 py-2 rounded-lg text-gray-500 hover:bg-gray-200 font-semibold text-sm" href="/pour-les-marques">Pour les marques</a>
+                <a class="px-4 py-2 rounded-lg text-gray-500 hover:bg-gray-200 font-semibold text-sm" href="/pour-les-marques">Confidentialité</a>
+                <a class="ml-4 bg-gradient-to-r from-purple-from to-purple-to rounded-lg px-4 py-1 text-purple-contrast text-sm" href="#beta">Rejoindre la bêta</a>
+            </div>
+        </nav>
+        <!-- Mobile menu, show/hide based on menu open state. -->
+        <div id="menu" class="lg:hidden hidden" role="dialog" aria-modal="true">
+            <!-- Background backdrop, show/hide based on slide-over state. -->
+            <div class="fixed inset-0 z-50"></div>
+            <div class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+                <div class="flex items-center justify-between">
+                    <a href="#" class="-m-1.5 p-1.5">
+                        <p>logo safi</p>
+                    </a>
+                    <button id="close-menu" type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700">
+                        <span class="sr-only">Fermer le menu</span>
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="mt-6 flow-root">
+                    <div class="-my-6 divide-y divide-gray-500/10">
+                        <div class="space-y-2 py-6">
+                            <a class="text-secondary -mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 hover:bg-gray-50" href="/pour-les-marques">Pour les marques</a>
+                            <a class="text-secondary -mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 hover:bg-gray-50" href="/pour-les-marques">Confidentialité</a>
+                            <a class="text-secondary -mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 hover:bg-gray-50" href="#beta">Rejoindre la bêta</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+</div>
+
+<!-- hero -->
+<section class="relative isolate px-6 lg:px-8">
+    <div class="container mx-auto max-w-2xl py-32 sm:py-48 lg:py-56 h-[calc(100vh-84px)] flex items-center">
+        <div class="text-center">
+            <h1 class="text-4xl font-bold tracking-tight text-black sm:text-6xl">Safi : La Révolution du Shopping en Ligne</h1>
+            <p class="mt-6 text-lg leading-8 text-gray-500">Fini les heures perdues à chercher des vêtements qui ne te conviennent qu'à moitié. Avec Safi, trouve les pièces qui te correspondent en quelques swipes !</p>
+            <div class="mt-10 flex items-center justify-center gap-x-6">
+                <a class="ml-4 bg-gradient-to-r from-purple-from to-purple-to rounded-lg px-4 py-2 text-purple-contrast" href="#beta">Rejoindre la bêta</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- others sections -->
+<section class="px-6 mt-4">
+    <div class="lg:container mx-auto">
+        <div class="grid gap-4 md:gap-16 grid-cols-12">
+            <div class="flex flex-col justify-center col-span-12 md:col-span-8">
+                <h2 class="text-3xl font-bold tracking-tight text-black sm:text-4xl">Safi, ton Personal Shopper intelligent</h2>
+                <p class="mt-6 text-gray-500">Avec Safi, fini la navigation sans fin et les sélections qui ne te ressemblent pas. Notre IA devient ton personal shopper et te propose une sélection personnalisée de vêtements.   Swipe à droite pour sauvegarder ce qui te plaît, à gauche pour passer. Simple, rapide et intuitif.</p>
+            </div>
+            <div class="flex justify-center col-span-12 md:col-span-4 md:order-first">
+                <img class="w-[50%] md:w-[320px]" loading="lazy" src="img/mock-up.png" alt="Mock up telephone" width="593" height="1135" style="aspect-ratio: 593 / 1135">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="px-6 my-16 lg:24">
+    <div class="lg:container mx-auto">
+        <div class="grid gap-4 md:gap-16 grid-cols-12">
+            <div class="flex flex-col justify-center col-span-12 md:col-span-8">
+                <h2 class="text-3xl font-bold tracking-tight text-black sm:text-4xl">Inspire-toi avec nos playlists</h2>
+                <p class="mt-6 text-gray-500">Découvre de nouveaux horizons mode grâce à nos playlists thématiques. Chaque sélection est un mix soigneusement composé pour correspondre à ton humeur, une occasion ou ton envie d’explorer de nouveaux styles. Laisse-toi guider et trouve ton prochain coup de cœur.</p>
+            </div>
+            <div class="flex justify-center col-span-12 md:col-span-4">
+                <img class="w-[50%] md:w-[320px]" loading="lazy" src="img/mock-up.png" alt="Mock up telephone" width="593" height="1135" style="aspect-ratio: 593 / 1135">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="px-6 my-16 lg:24">
+    <div class="lg:container mx-auto">
+        <div class="grid gap-4 md:gap-16 grid-cols-12">
+            <div class="flex flex-col justify-center col-span-12 md:col-span-8">
+                <h2 class="text-3xl font-bold tracking-tight text-black sm:text-4xl">Rejoins la communauté Safi</h2>
+                <p class="mt-6 text-gray-500">Deviens membre de notre communauté avant-gardiste en t'inscrivant à la version bêta. Chez Safi, le shopping se vit ensemble. Suis amis, créateurs et influenceurs pour une dose quotidienne d'inspiration et partage tes découvertes. Avec Safi, tu ne suis pas seulement la mode – tu participes à la créer.</p>
+            </div>
+            <div class="flex justify-center col-span-12 md:col-span-4 md:order-first">
+                <img class="w-[50%] md:w-[320px]" loading="lazy" src="img/mock-up.png" alt="Mock up telephone" width="593" height="1135" style="aspect-ratio: 593 / 1135">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="beta" class="px-6 my-16 lg:24">
+    <div class="flex flex-col items-center justify-center lg:container mx-auto text-center">
+        <h2 class="text-3xl font-bold tracking-tight text-black sm:text-4xl">Rejoindre la bêta</h2>
+        <p class="mt-2 text-black font-bold">Rejoins la révolution du shopping en ligne !</p>
+        <div class="w-full sm:w-9/12 md:w-6/12">
+            <iframe data-tally-src="https://tally.so/embed/wLPb1O?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" loading="lazy" width="100%" height="120" frameborder="0" marginheight="0" marginwidth="0" title="Formulaire Beta"></iframe>
+        </div>
+    </div>
+</section>
+
+
+</body>
+</html>
+
+<script>
+    (() => {
+        const menu = document.querySelector('#menu');
+        document.querySelector('#open-menu').addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+        document.querySelector('#close-menu').addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+    })();
+</script>
+
+<script>var d=document,w="https://tally.so/widgets/embed.js",v=function(){"undefined"!=typeof Tally?Tally.loadEmbeds():d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach((function(e){e.src=e.dataset.tallySrc}))};if("undefined"!=typeof Tally)v();else if(d.querySelector('script[src="'+w+'"]')==null){var s=d.createElement("script");s.src=w,s.onload=v,s.onerror=v,d.body.appendChild(s);}</script>
